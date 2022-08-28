@@ -10,8 +10,8 @@ a {
   text-decoration: none;
 }
 
-.et-hero-tabs,
-.et-slide {
+.A-tabs,
+.A-slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,21 +22,21 @@ a {
   text-align: center;
   padding: 0 2em;
 }
-.et-hero-tabs h1,
-.et-slide h1 {
+.A-tabs h1,
+.A-slide h1 {
   font-size: 2rem;
   margin: 0;
   letter-spacing: 1rem;
 }
-.et-hero-tabs h3,
-.et-slide h3 {
+.A-tabs h3,
+.A-slide h3 {
   font-size: 1rem;
   letter-spacing: 0.3rem;
   opacity: 1;
   color: #666666;
 }
 
-.et-hero-tabs-container {
+.A-tabs-container {
   display: flex;
   flex-direction: row;
   position: absolute;
@@ -47,12 +47,12 @@ a {
   background: #fff;
   z-index: 10;
 }
-.et-hero-tabs-container--top {
+.A-tabs-container--top {
   position: fixed;
   top: 0;
 }
 
-.et-hero-tab {
+.A-tab {
   
   display: flex;
   justify-content: center;
@@ -105,13 +105,13 @@ background-color: #8B764B;
 
 
 /* tab bar selection color */
-.et-hero-tab:hover {
+.A-tab:hover {
   color: white;
   background: rgba(102, 177, 241, 0.8);
   transition: all 0.5s ease;
 }
 
-.et-hero-tab-slider {
+.A-tab-slider {
   position: absolute;
   bottom: 0;
   width: 0;
@@ -121,16 +121,16 @@ background-color: #8B764B;
 }
 
 @media (min-width: 800px) {
-  .et-hero-tabs h1,
-.et-slide h1 {
+  .A-tabs h1,
+.A-slide h1 {
     font-size: 3rem;
   }
-  .et-hero-tabs h3,
-.et-slide h3 {
+  .A-tabs h3,
+.A-slide h3 {
     font-size: 1rem;
   }
 
-  .et-hero-tab {
+  .A-tab {
     font-size: 1rem;
   }
 }
