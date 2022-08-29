@@ -1,0 +1,110 @@
+<div id="screen">
+  <h1>SKordle</h1>
+  <div id="grid"></div>
+  <div id="keyboard"></div>
+</div>
+<head>
+  <title>SKordle</title>
+  <link rel="icon" href="Tab-Icon.ico">
+<style>
+  body, html {
+    background: rgb(17, 17, 17);
+    font-family: sans-serif;
+    color: white;
+    font-weight: 700;
+    
+    text-align: center;
+    text-transform: uppercase;
+  }
+  body, html, #screen {
+    height: 100vh;
+    width: 100%;
+  }
+  #screen {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 42px;
+    flex: none;
+    border-bottom: 1px solid #3a3a3c;
+  }
+  #grid {
+
+    flex: 1 1 auto;
+  }
+  .button {
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 3px;
+    border-radius: 5px;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+  }
+  #keyboard {
+    flex: bottom;
+    margin-bottom:  15px;
+   
+  }
+  .cell {
+    width: 60px;
+    height: 60px;
+    
+    line-height: 60px;
+    display: inline-block;
+    margin: 3px;
+    padding: 1px;
+    font-size: 40px;
+    font-weight: bold;
+    perspective: 1000px;
+  }
+  .cell .front, .cell .back {
+    border: 2px solid #444;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .cell.solved .surface {
+    transform: rotateX(180deg);
+  }
+  .cell .surface {
+    transition-duration: 800ms;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .cell .front {
+    z-index: 2;
+  }
+  .cell .back {
+    z-index: 1;
+    transform: rotateX(180deg);
+  }
+  @keyframes press {
+    from {
+      opacity: 0.5;
+      transform: scale(0.95);
+    }
+    50% {
+      opacity: 0.85;
+      transform: scale(1.1);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  body {
+  overflow-y: hidden;
+  overflow-x: hidden; 
+}
+</style>
+</head>
+<script src="D:\VSC-DO NOT MOVE\Portfolio-Website\Second-Page\Second-page-java\SKordle.js"></script>
