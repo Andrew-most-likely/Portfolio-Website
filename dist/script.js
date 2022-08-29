@@ -1,4 +1,4 @@
-class StickyNavigation {
+ class StickyNavigation {
 	
 	constructor() {
 		this.currentId = null;
