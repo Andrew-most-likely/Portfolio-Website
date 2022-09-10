@@ -1,0 +1,134 @@
+
+img { 
+  max-width: 100%; 
+  height: auto; 
+}
+body {
+  font-family: "Century Gothic", "Lato", sans-serif;
+}
+
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.A-tabs,
+.A-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+
+  text-align: center;
+  padding: 0 2em;
+}
+.A-tabs h1,
+.A-slide h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1rem;
+}
+.A-tabs h3,
+.A-slide h3 {
+  font-size: 30px;
+  letter-spacing: 0.3rem;
+  opacity: 1;
+  color: #666666;
+}
+
+.A-tabs-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px #0000001a;
+  background: #fff;
+  z-index: 10;
+}
+.A-tabs-container--top {
+  position: fixed;
+  top: 0;
+}
+
+.A-tab {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: #000;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 0.8rem;
+}
+
+
+#onestep{
+margin-left: 70%;
+}
+
+#Double-Poloroid{
+margin-right: 70%;
+}
+
+/* section color */
+#Main{
+background-color: #faebd7;
+}
+
+#Web{
+
+background-color: #FCEFD1;
+}
+
+#Photo{
+background-color: #F9DEA3;
+}
+
+#Tab-3D{
+background-color: #F7D486;
+}
+
+#Program{
+background-color: #C1A569;
+}
+
+#Other{
+background-color: #8B764B;
+}
+
+
+/* tab bar selection color */
+.A-tab:hover {
+  color: white;
+  background: #66b1f1cc;
+  transition: all 0.5s ease;
+}
+
+.A-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: #66B1F1;
+  transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+  .A-tabs h1,
+.A-slide h1 {
+    font-size: 3rem;
+  }
+  .A-tabs h3,
+.A-slide h3 {
+    font-size: 30px;
+  }
+
+  .A-tab {
+    font-size: 1rem;
+  }
+}
