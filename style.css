@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #666666;
+  
   text-decoration: none;
 }
 
@@ -66,15 +66,6 @@ a {
   font-size: 0.8rem;
 }
 
-
-#onestep{
-margin-left: 70%;
-}
-
-#Double-Poloroid{
-margin-right: 70%;
-}
-
 /* section color */
 #Main{
 background-color: #faebd7;
@@ -97,7 +88,7 @@ background-color: #F7D486;
 background-color: #C1A569;
 }
 
-#Other{
+#Info{
 background-color: #8B764B;
 }
 
